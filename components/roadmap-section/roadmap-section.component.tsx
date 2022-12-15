@@ -12,7 +12,7 @@ const RoadmapSection = () => {
 			titleColor: "#9CDDFF",
 			title: "Omnipool",
 			status: "Soon<sup>TM</sup>",
-			process: "95%",
+			process: "100%",
 			barColor:
 				"linear-gradient(270deg, #9CDDFF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -24,7 +24,7 @@ const RoadmapSection = () => {
 			titleColor: "#9CDDFF",
 			title: "DAI <sup>(Wormhole)</sup>",
 			status: "Soon<sup>TM</sup>",
-			process: "95%",
+			process: "100%",
 			barColor:
 				"linear-gradient(270deg, #9CDDFF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -36,7 +36,7 @@ const RoadmapSection = () => {
 			titleColor: "#5FC7FF",
 			title: "DOT",
 			status: "Soon<sup>TM</sup>",
-			process: "95%",
+			process: "100%",
 			barColor:
 				"linear-gradient(270deg, #5FC7FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -48,7 +48,7 @@ const RoadmapSection = () => {
 			titleColor: "#2AB4FF",
 			title: "Liquidity Provisioning",
 			status: "Soon<sup>TM</sup>",
-			process: "90%",
+			process: "80%",
 			barColor:
 				"linear-gradient(270deg, #2AB4FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -58,9 +58,21 @@ const RoadmapSection = () => {
 		},
 		{
 			titleColor: "#07A8FF",
+			title: "USDT <sup>(Native)</sup>",
+			status: "Soon<sup>TM</sup>",
+			process: "65%",
+			barColor:
+				"linear-gradient(270deg, #07A8FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
+			icon: {
+				src: "/assets/roadmap-section/5.svg",
+				alt: "5",
+			},
+		},
+		{
+			titleColor: "#07A8FF",
 			title: "Liquidity Mining",
 			status: "Soon<sup>TM</sup>",
-			process: "80%",
+			process: "60%",
 			barColor:
 				"linear-gradient(270deg, #2A99FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -69,35 +81,10 @@ const RoadmapSection = () => {
 			},
 		},
 		{
-			titleColor: "#1263FF",
-			title: "ETH <sup>(Snowbridge)</sup>",
-			status: "Working on it",
-			process: "80%",
-			barColor:
-				"linear-gradient(270deg, #1246FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
-			icon: {
-				src: "/assets/roadmap-section/9.svg",
-				alt: "9",
-			},
-		},
-		{
-			titleColor: "#07A8FF",
-			title: "USDT <sup>(Native)</sup>",
-			status: "Soon<sup>TM</sup>",
-			process: "80%",
-			barColor:
-				"linear-gradient(270deg, #07A8FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
-			icon: {
-				src: "/assets/roadmap-section/5.svg",
-				alt: "5",
-			},
-		},
-
-		{
 			titleColor: "#127FFF",
 			title: "Stableswap Pool",
 			status: "Soon<sup>TM</sup>",
-			process: "75%",
+			process: "55%",
 			barColor:
 				"linear-gradient(270deg, #127FFF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -109,7 +96,7 @@ const RoadmapSection = () => {
 			titleColor: "#1263FF",
 			title: "USDC <sup>(Native)</sup>",
 			status: "Working on it",
-			process: "65%",
+			process: "50%",
 			barColor:
 				"linear-gradient(270deg, #1263FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -117,17 +104,28 @@ const RoadmapSection = () => {
 				alt: "8",
 			},
 		},
-
+		{
+			titleColor: "#1263FF",
+			title: "ETH <sup>(Snowbridge)</sup>",
+			status: "Working on it",
+			process: "45%",
+			barColor:
+				"linear-gradient(270deg, #1246FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
+			icon: {
+				src: "/assets/roadmap-section/9.svg",
+				alt: "9",
+			},
+		},
 		{
 			titleColor: "#1263FF",
 			title: "Dynamic fees",
 			status: "Working on it",
-			process: "60%",
+			process: "45%",
 			barColor:
 				"linear-gradient(270deg, #033AFF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
 				src: "/assets/roadmap-section/10.svg",
-				alt: "10",
+				alt: "10%",
 			},
 		},
 		// {
@@ -158,7 +156,7 @@ const RoadmapSection = () => {
 			titleColor: "#0047FF",
 			title: "Order Batching",
 			status: "Working on it",
-			process: "20%",
+			process: "30%",
 			barColor:
 				"linear-gradient(270deg, #0047FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
@@ -170,7 +168,7 @@ const RoadmapSection = () => {
 			titleColor: "#1425BB",
 			title: "Liquidation Engine",
 			status: "Big Idea",
-			process: "0%",
+			process: "20%",
 			barColor:
 				"linear-gradient(270deg, #1425BB 10.04%, rgba(20, 37, 187, 0) 97.53%)",
 			icon: {

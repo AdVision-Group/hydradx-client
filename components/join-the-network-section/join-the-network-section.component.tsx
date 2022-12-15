@@ -96,10 +96,7 @@ const JoinTheNetworkSection = () => {
 							Join
 							<br /> discord community
 						</H3>
-						<P>
-							A tribe of Hydraheads is looking forward to meet you.A tribe of
-							Hydraheads is looking forward to meet you.
-						</P>
+						<P>A tribe of Hydraheads is looking forward to meet you.</P>
 						<Button
 							href="https://discord.gg/kkmY35UxAG"
 							target="_blank"

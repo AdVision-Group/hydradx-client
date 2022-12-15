@@ -154,6 +154,7 @@ const ProgressBarFigure = styled(motion.figure)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-left: -0.1rem;
 `
 
 interface ITitle {
