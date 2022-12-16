@@ -163,6 +163,7 @@ const OmnipoolSection = () => {
 					viewport={{ once: true }}
 				>
 					<FirstIlu variants={iluVariants}>
+						<Blur />
 						<Image
 							src="/assets/omnipool/first-ilu-v2.png"
 							alt="first ilu"
@@ -390,6 +391,7 @@ const OmnipoolSection = () => {
 						/>
 					</FourthIluCoin>
 					<FourthIlu variants={iluVariants}>
+						<Blur />
 						<Image
 							src="/assets/omnipool/fourth-ilu-v2.png"
 							alt="fourth ilu"
@@ -479,7 +481,8 @@ const Section = styled.section`
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-			margin-bottom: 25rem;
+			margin-bottom: 10rem;
+			/* margin-bottom: 25rem; */
 			padding-top: 9.156rem;
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			}
@@ -727,12 +730,25 @@ const ContentFigure = styled(motion.figure)`
 	flex-grow: 1;
 `
 
+const Blur = styled(motion.div)`
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: #04071301;
+	backdrop-filter: blur(1.5rem);
+`
+
 const FirstIlu = styled(motion.figure)`
+	position: relative;
 	width: 100%;
 	max-width: 47.408rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 `
 
 const FirstIluCoin = styled(motion.figure)`
@@ -741,7 +757,7 @@ const FirstIluCoin = styled(motion.figure)`
 	justify-content: center;
 
 	position: absolute;
-	z-index: -1;
+	z-index: -2;
 
 	width: 18.252rem;
 	height: 18.173rem;
@@ -820,11 +836,13 @@ const ThirdIlu = styled(motion.figure)`
 `
 
 const FourthIlu = styled(motion.figure)`
+	position: relative;
 	width: 100%;
 	max-width: 49.2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -840,7 +858,7 @@ const FourthIluCoin = styled(motion.figure)`
 	justify-content: center;
 
 	position: absolute;
-	z-index: -1;
+	z-index: -2;
 
 	width: 18.252rem;
 	height: 18.173rem;
