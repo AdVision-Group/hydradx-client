@@ -176,6 +176,18 @@ const Button = styled.a`
 	line-height: 150%;
 
 	text-transform: uppercase;
+	transition: all 0.3s ease-out;
 
 	color: #85d1ff;
+
+	&:hover {
+		color: #ffffff;
+		background-color: rgba(1, 107, 172, 0.9);
+	}
+
+	&:active {
+		background-color: #3192cd;
+		border: 1px solid #a6ddff;
+		color: #ffffff;
+	}
 `
