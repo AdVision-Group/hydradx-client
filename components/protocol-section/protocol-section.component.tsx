@@ -1,19 +1,8 @@
 import styled, { css } from "styled-components"
-// import localFont from "@next/font/local"
 
 import H2 from "../h2/content-h2.component"
 // import { Button } from "../button/button.component"
 import Image from "../image/image.component"
-
-// const headerFont = localFont({
-// 	src: [
-// 		{
-// 			path: "../../assets/fonts/hubot-sans/WOFF-2/Hubot-Sans-Medium.woff2",
-// 			weight: "550",
-// 			style: "normal",
-// 		},
-// 	],
-// })
 
 const ProtocolSection = () => {
 	return (
