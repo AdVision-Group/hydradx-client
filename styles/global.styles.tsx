@@ -84,12 +84,16 @@ export const GlobalStyles = createGlobalStyle`
   
   
   a {
-    cursor: pointer;
+    cursor: crosshair;
     text-decoration: none;
   }
 
   ul, ol {
     list-style: none;
+  }
+
+  button {
+    cursor: crosshair;
   }
   
   input, button {

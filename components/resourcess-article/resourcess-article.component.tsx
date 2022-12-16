@@ -156,7 +156,7 @@ const Line = styled.span`
 `
 
 const Button = styled.a`
-	cursor: pointer;
+	cursor: crosshair;
 	background: rgba(76, 213, 243, 0.12);
 	display: grid;
 	grid-template-columns: auto 1fr;

@@ -396,7 +396,7 @@ const CoinFigure = styled.figure`
 `
 
 const buttonStyles = css`
-	cursor: pointer;
+	cursor: crosshair;
 	background: transparent;
 	display: inline-block;
 

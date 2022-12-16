@@ -538,7 +538,8 @@ const IluFigure = styled(motion.figure)`
 `
 
 const buttonStyles = css`
-	cursor: pointer;
+	cursor: crosshair;
+
 	background: transparent;
 	display: inline-block;
 
@@ -758,7 +759,6 @@ const Blur = styled(motion.div)`
 	backdrop-filter: blur(1.5rem);
 	background-color: #04071301;
 	border: 1px solid #04071301;
-
 `
 
 const FirstIlu = styled(motion.figure)`
@@ -769,7 +769,7 @@ const FirstIlu = styled(motion.figure)`
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-  
+
 	/* &:before {
 		content: "";
 		position: absolute;
@@ -781,7 +781,6 @@ const FirstIlu = styled(motion.figure)`
 		background-color: #04071301;
 		backdrop-filter: blur(1.5rem);
 	} */
-
 `
 
 const FirstIluCoin = styled(motion.figure)`

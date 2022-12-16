@@ -271,7 +271,7 @@ const IluFigure = styled.figure`
 `
 
 const Button = styled.a`
-	cursor: pointer;
+	cursor: crosshair;
 	background: transparent;
 	display: grid;
 	grid-template-columns: auto 1fr;
