@@ -3,15 +3,18 @@ import styled from "styled-components"
 import { motion, Variants, useScroll, useTransform } from "framer-motion"
 
 import { Tooltip } from "react-tooltip"
-
-
 import { Button } from "../button/button.component"
 import Image from "../image/image.component"
 import Link from "next/link"
 
+import { useBoolean } from "usehooks-ts"
+
 import "react-tooltip/dist/react-tooltip.css"
 
 const HeroSection = () => {
+	const { value: isAnimationDone, setValue: setIsAnimationDone } =
+		useBoolean(false)
+
 	const { scrollYProgress } = useScroll()
 
 	const transformIlu = useTransform(scrollYProgress, [0, 0.3], [1, 1.3])
@@ -227,6 +230,8 @@ const HeroSection = () => {
 		},
 	}
 
+	console.log("isAnimationDone", isAnimationDone)
+
 	return (
 		<>
 			<Section>
@@ -235,7 +240,10 @@ const HeroSection = () => {
 					initial="hidden"
 					animate="visible"
 					style={{
-						scale: transformIlu,
+						scale: isAnimationDone ? transformIlu : 0,
+					}}
+					onAnimationComplete={() => {
+						setIsAnimationDone(true)
 					}}
 				>
 					<BackgroundFigure className="desktop">
