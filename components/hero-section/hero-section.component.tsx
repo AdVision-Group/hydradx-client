@@ -520,7 +520,7 @@ const SocialDirectory = styled(motion.div)`
 const MobileSocialDirectory = styled.div`
 	display: flex;
 	justify-content: center;
-	gap: 3.877rem;
+	gap: 2.877rem;
 	flex-wrap: wrap;
 	margin-top: 2.1rem;
 	/* margin-bottom: 5.9rem; */
