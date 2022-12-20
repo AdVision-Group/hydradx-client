@@ -1,10 +1,13 @@
 import styled from "styled-components"
 // import localFont from "@next/font/local"
 import { motion, Variants, useScroll, useTransform } from "framer-motion"
+import { Tooltip } from "react-tooltip"
 
 import { Button } from "../button/button.component"
 import Image from "../image/image.component"
 import Link from "next/link"
+
+import "react-tooltip/dist/react-tooltip.css"
 
 const HeroSection = () => {
 	const { scrollYProgress } = useScroll()
@@ -13,6 +16,8 @@ const HeroSection = () => {
 
 	const socials = [
 		{
+			id: "reddit",
+			tooltip: "Reddit",
 			href: "https://www.reddit.com/r/hdx/",
 			icon: {
 				src: "/assets/hero-section/socials/reddit.svg",
@@ -24,6 +29,8 @@ const HeroSection = () => {
 			},
 		},
 		{
+			id: "substack",
+			tooltip: "Substack",
 			href: "https://hydradx.substack.com/",
 			rel: "noopener noreferrer",
 			target: "_blank",
@@ -37,6 +44,8 @@ const HeroSection = () => {
 			},
 		},
 		{
+			id: "twitter",
+			tooltip: "Twitter",
 			href: "https://twitter.com/hydra_dx",
 			rel: "noopener noreferrer",
 			target: "_blank",
@@ -50,6 +59,8 @@ const HeroSection = () => {
 			},
 		},
 		{
+			id: "discord",
+			tooltip: "Discord",
 			href: "https://discord.gg/kkmY35UxAG",
 			rel: "noopener noreferrer",
 			target: "_blank",
@@ -64,6 +75,8 @@ const HeroSection = () => {
 		},
 
 		{
+			id: "telegram",
+			tooltip: "Telegram",
 			href: "https://t.me/hydradx",
 			rel: "noopener noreferrer",
 			target: "_blank",
@@ -77,6 +90,8 @@ const HeroSection = () => {
 			},
 		},
 		{
+			id: "github",
+			tooltip: "Github",
 			href: "https://github.com/galacticcouncil",
 			rel: "noopener noreferrer",
 			target: "_blank",
@@ -282,6 +297,7 @@ const HeroSection = () => {
 					</Footer>
 				</motion.div>
 			</Section>
+
 			<SocialDirectory
 				variants={socialVariants}
 				initial="hidden"
@@ -289,11 +305,19 @@ const HeroSection = () => {
 			>
 				{socials.map((social, index) => (
 					<Link
+						id={social.id}
 						href={social.href}
 						key={index}
 						rel={social.rel}
 						target={social.target}
 					>
+						<Tooltip
+							anchorId={social.id}
+							content={social.tooltip}
+							place="top"
+							style={{ fontFamily: '"Chakra Petch", sans-serif' }}
+						/>
+
 						<SocialFigure>
 							<Image
 								src={social.icon.src}
