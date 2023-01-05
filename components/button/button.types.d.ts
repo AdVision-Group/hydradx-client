@@ -19,4 +19,6 @@ export interface IButtonProps extends HTMLMotionProps<"button">, IStyledProps {}
 
 export interface IButtonLinkProps extends HTMLMotionProps<"div">, IStyledProps {
 	href: string
+	target?: string
+	rel?: string
 }

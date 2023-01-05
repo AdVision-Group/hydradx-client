@@ -3,18 +3,17 @@ import styled from "styled-components"
 import { motion, Variants, useScroll, useTransform } from "framer-motion"
 
 import { Tooltip } from "react-tooltip"
-import { Button } from "../button/button.component"
+import { ButtonLink } from "../button/button.component"
 import Image from "../image/image.component"
 import Link from "next/link"
 import { useState } from "react"
 
-import { useBoolean } from "usehooks-ts"
+// import { useBoolean } from "usehooks-ts"
 
 import "react-tooltip/dist/react-tooltip.css"
 
 const HeroSection = () => {
 	const [isAnimationDone, setIsAnimationDone] = useState(false)
-
 
 	const { scrollYProgress } = useScroll()
 
@@ -291,8 +290,14 @@ const HeroSection = () => {
 					</P>
 
 					<ButtonsContainer variants={buttonsContainerVariants}>
-						{/* <Button>ENTER OMNIPOOL</Button> */}
-						<Button disabled>COMING SOON</Button>
+						<ButtonLink
+							href="https://app.hydradx.io/#/trade"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							ENTER OMNIPOOL
+						</ButtonLink>
+						{/* <Button disabled>COMING SOON</Button> */}
 					</ButtonsContainer>
 
 					<Footer variants={footerVariants}>

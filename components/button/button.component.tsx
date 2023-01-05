@@ -97,7 +97,9 @@ export const Button: React.FC<IButtonProps> = (props) => {
 export const ButtonLink: React.FC<IButtonLinkProps> = (props) => {
 	return (
 		<AContainer {...props}>
-			<Link href={props.href || "#"}>{props.children}</Link>
+			<Link href={props.href || "#"} target={props.target} rel={props.rel}>
+				{props.children}
+			</Link>
 		</AContainer>
 	)
 }

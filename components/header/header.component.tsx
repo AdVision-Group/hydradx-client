@@ -5,7 +5,7 @@ import { AnimatePresence, motion, Variants } from "framer-motion"
 import Image from "../image/image.component"
 import Link from "next/link"
 import HamMenuButton from "../ham-menu-button/ham-menu-button.component"
-import { Button } from "../button/button.component"
+import { ButtonLink } from "../button/button.component"
 import { GoPlus } from "react-icons/go"
 
 import { useBoolean } from "usehooks-ts"
@@ -212,9 +212,14 @@ const Header = ({ navItems }: IProps) => {
 									animate={"visible"}
 									exit={"hidden"}
 								>
-									<Button disabled className="btn">
-										COMING SOON
-									</Button>
+									<ButtonLink
+										className="btn"
+										href="https://app.hydradx.io/#/trade"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										ENTER OMNIPOOL
+									</ButtonLink>
 								</motion.div>
 							)}
 						</AnimatePresence>
@@ -447,7 +452,7 @@ const CtaContainer = styled.div`
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 			display: block;
 			visibility: visible;
-			width: 21.45rem;
+			width: 26.9rem;
 
 			.btn {
 				padding: 0.8rem 3.6rem;
