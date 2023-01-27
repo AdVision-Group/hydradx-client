@@ -47,8 +47,20 @@ const RoadmapSection = () => {
 		{
 			titleColor: "#2AB4FF",
 			title: "Liquidity Provisioning",
-			status: "Soon<sup>TM</sup>",
-			process: "80%",
+			status: "Completed",
+			process: "100%",
+			barColor:
+				"linear-gradient(270deg, #2AB4FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
+			icon: {
+				src: "/assets/roadmap-section/4.svg",
+				alt: "4",
+			},
+		},
+		{
+			titleColor: "#2AB4FF",
+			title: "wETH",
+			status: "Completed",
+			process: "100%",
 			barColor:
 				"linear-gradient(270deg, #2AB4FF 10.04%, rgba(55, 103, 128, 0) 97.53%)",
 			icon: {
