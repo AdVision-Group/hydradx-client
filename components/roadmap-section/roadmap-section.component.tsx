@@ -58,7 +58,7 @@ const RoadmapSection = () => {
     },
     {
       titleColor: "#2AB4FF",
-      title: "wETH",
+      title: "wETH <sup>(wormhole)</sup>",
       status: "Completed",
       process: "100%",
       barColor:
@@ -70,7 +70,7 @@ const RoadmapSection = () => {
     },
     {
       titleColor: "#2AB4FF",
-      title: "wBTC",
+      title: "wBTC <sup>(wormhole)</sup>",
       status: "Completed",
       process: "100%",
       barColor:
